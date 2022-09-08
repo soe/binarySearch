@@ -1,7 +1,7 @@
 binarySearch(haystack, needle, startIndex, endIndex)
 
   // needle might still be in the range
-  if(endIndex >= startIndex)
+  if(startIndex <= endIndex)
     midIndex = (startIndex + endIndex) // 2
 
     // found!

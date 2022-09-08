@@ -1,0 +1,21 @@
+binarySearch(array, target, startIndex, endIndex)
+
+  // target might still be in the range
+  if(endIndex >= startIndex)
+    midIndex = (startIndex + endIndex) // 2
+
+    // found!
+    if(target == array[midIndex])
+      return midIndex
+
+    // target is in the higher right side
+    else if(target > array[midIndex])
+      return binarySearch(array, target, midIndex + 1, endIndex)
+
+    // target is in the lower left side
+    else
+      return binarySearch(array, target, startIndex, midIndex - 1)
+	  
+  // target in not in the range
+	else
+    return False

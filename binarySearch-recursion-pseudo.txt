@@ -17,5 +17,5 @@ binarySearch(array, target, startIndex, endIndex)
       return binarySearch(array, target, startIndex, midIndex - 1)
 	  
   // target in not in the range
-	else
+  else
     return False

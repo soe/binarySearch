@@ -1,16 +1,19 @@
-binarySearch(array, target, startIndex, endIndex)
+binarySearch(haystack, needle, startIndex, endIndex)
 
-  // loop until only 1 element is left in the search range
-  while startIndex != endIndex
+  // loop until only 1 element is left
+  while  startIndex <= endIndex
     midIndex = (startIndex + endIndex) // 2
 
-    if(target == array[midIndex])
+    if(needle == haystack[midIndex])
       return midIndex
 
-    // target is in the higher right side
-    else if(target > array[midIndex])
+    // needle is in the higher right side
+    else if(needle > haystack[midIndex])
       startIndex = midIndex + 1
 
-    // target is in the lower left side
+    // needle is in the lower left side
     else
       endIndex = midIndex - 1
+  
+  // needle is not found
+  return False

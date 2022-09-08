@@ -1,21 +1,21 @@
-binarySearch(array, target, startIndex, endIndex)
+binarySearch(haystack, needle, startIndex, endIndex)
 
-  // target might still be in the range
+  // needle might still be in the range
   if(endIndex >= startIndex)
     midIndex = (startIndex + endIndex) // 2
 
     // found!
-    if(target == array[midIndex])
+    if(needle == haystack[midIndex])
       return midIndex
 
-    // target is in the higher right side
-    else if(target > array[midIndex])
-      return binarySearch(array, target, midIndex + 1, endIndex)
+    // needle is in the higher right side
+    else if(needle > haystack[midIndex])
+      return binarySearch(haystack, needle, midIndex + 1, endIndex)
 
-    // target is in the lower left side
+    // needle is in the lower left side
     else
-      return binarySearch(array, target, startIndex, midIndex - 1)
+      return binarySearch(haystack, needle, startIndex, midIndex - 1)
 	  
-  // target in not in the range
+  // needle in not in the range
   else
     return False

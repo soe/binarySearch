@@ -1,9 +1,11 @@
 binarySearch(haystack, needle, startIndex, endIndex)
 
-  // loop until only 1 element is left
+  // loop until only 1 element is left in the haystack
   while  startIndex <= endIndex
+    // find the middle one, if there are two take the first(floor) one
     midIndex = (startIndex + endIndex) // 2
 
+    // found! tada!
     if(needle == haystack[midIndex])
       return midIndex
 

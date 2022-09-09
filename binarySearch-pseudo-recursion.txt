@@ -1,7 +1,7 @@
 binarySearch(haystack, needle, startIndex, endIndex)
 
   // needle might still be in the range
-  if(startIndex <= endIndex)
+  if(endIndex >= startIndex)
     midIndex = (startIndex + endIndex) // 2
 
     // found!
@@ -10,10 +10,14 @@ binarySearch(haystack, needle, startIndex, endIndex)
 
     // needle is in the higher right side
     else if(needle > haystack[midIndex])
+      // search function is called again
+      // with startIndex set to midIndex + 1
       return binarySearch(haystack, needle, midIndex + 1, endIndex)
 
     // needle is in the lower left side
     else
+      // search function is called again
+      // with endIndex set to midIndex - 1
       return binarySearch(haystack, needle, startIndex, midIndex - 1)
 	  
   // needle in not in the range

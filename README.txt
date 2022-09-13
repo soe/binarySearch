@@ -1,4 +1,10 @@
 Google docs is available at:
+https://docs.google.com/document/d/1LSHi1OAzvdEUkiOFNFQoSrbi05-F5cG5/edit?usp=sharing&ouid=106883772683146392134&rtpof=true&sd=true
+
+Grammarly checks:
+- No Plagiarism
+- Fixed recommendations
+- As code snippets are included in the body, Grammarly check those as well
 
 Document's table of content:
 - What is binary search?
